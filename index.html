@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DJ OTEO — Brand Ambassador & Media Kit</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-card: #161616;
+  --bg-card-hover: #1c1c1c;
+  --gold: #c9a84c;
+  --gold-light: #e2c872;
+  --gold-dim: rgba(201, 168, 76, 0.15);
+  --gold-glow: rgba(201, 168, 76, 0.3);
+  --text-primary: #f0ede6;
+  --text-secondary: #a09d96;
+  --text-muted: #6b6860;
+  --border: rgba(201, 168, 76, 0.12);
+  --border-strong: rgba(201, 168, 76, 0.25);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── HERO ─────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--bg-primary) 0%, #0d0b08 50%, var(--bg-primary) 100%);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-content { position: relative; z-index: 2; }
+
+.hero-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 3px solid var(--border-strong);
+  margin: 0 auto 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(201, 168, 76, 0.08);
+}
+
+.hero-photo-placeholder {
+  color: var(--text-muted);
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.hero-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 8vw, 84px);
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--text-primary);
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-secondary);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.hero-location {
+  font-size: 14px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-bottom: 36px;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1.2;
+}
+
+.hero-stat-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.hero-cta-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--bg-primary);
+}
+
+.btn-primary:hover {
+  background: var(--gold-light);
+  box-shadow: 0 4px 24px rgba(201, 168, 76, 0.25);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--border-strong);
+}
+
+.btn-outline:hover {
+  background: var(--gold-dim);
+  border-color: var(--gold);
+}
+
+/* ── SECTION SYSTEM ───────────────────────── */
+section {
+  padding: 80px 0;
+}
+
+.section-divider {
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 16px;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 48px;
+  line-height: 1.2;
+}
+
+/* ── ABOUT ────────────────────────────────── */
+.about { background: var(--bg-secondary); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.about-text p:first-child::first-letter {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--gold);
+  float: left;
+  line-height: 1;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-detail {
+  padding: 20px 24px;
+  background: var(--bg-card);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 4px 4px 0;
+}
+
+.about-detail-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.about-detail-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.about-detail-value a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.about-detail-value a:hover {
+  color: var(--gold-light);
+}
+
+/* ── SIGNATURE SOUND ──────────────────────── */
+.signature-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.track-row {
+  display: grid;
+  grid-template-columns: 40px 1fr auto auto;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 24px;
+  background: var(--bg-card);
+  transition: background 0.2s;
+}
+
+.track-row:hover { background: var(--bg-card-hover); }
+
+.track-rank {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold);
+  text-align: center;
+}
+
+.track-info { min-width: 0; }
+
+.track-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.track-bpm {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.track-plays {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+/* ── RESIDENCIES ──────────────────────────── */
+.residencies { background: var(--bg-secondary); }
+
+.residency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.residency-card {
+  padding: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.residency-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.residency-status {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+
+.residency-status.active {
+  background: rgba(201, 168, 76, 0.12);
+  color: var(--gold);
+}
+
+.residency-status.past {
+  background: rgba(255,255,255,0.04);
+  color: var(--text-muted);
+}
+
+.residency-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.residency-detail {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ── CONTENT STYLE ────────────────────────── */
+.content-style-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.content-card {
+  text-align: center;
+  padding: 36px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.content-card:hover { border-color: var(--border-strong); }
+
+.content-icon {
+  font-size: 28px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.content-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.content-card p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ── AUDIENCE ─────────────────────────────── */
+.audience { background: var(--bg-secondary); }
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.audience-block { text-align: center; }
+
+.audience-block h3 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.audience-bar-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.audience-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.audience-bar-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  width: 90px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.audience-bar-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.audience-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+
+.audience-bar-pct {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold);
+  width: 36px;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+/* ── PARTNERSHIPS ─────────────────────────── */
+.partnership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.partnership-card {
+  padding: 36px 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.partnership-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
+
+.partnership-card.featured {
+  border-color: var(--border-strong);
+}
+
+.partnership-card.featured::after {
+  content: 'POPULAR';
+  position: absolute;
+  top: 16px;
+  right: -28px;
+  background: var(--gold);
+  color: var(--bg-primary);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 4px 36px;
+  transform: rotate(45deg);
+}
+
+.partnership-type {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.partnership-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.partnership-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold-light);
+  margin-bottom: 20px;
+}
+
+.partnership-includes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.partnership-includes li {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.partnership-includes li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* ── PORTFOLIO ────────────────────────────── */
+.portfolio { background: var(--bg-secondary); }
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-placeholder {
+  aspect-ratio: 16/10;
+  background: var(--bg-card);
+  border: 1px dashed var(--border-strong);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.portfolio-placeholder span {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ── CONTACT CTA ──────────────────────────── */
+.contact-cta {
+  text-align: center;
+  padding: 100px 0;
+  background: linear-gradient(180deg, var(--bg-primary) 0%, #0d0b08 50%, var(--bg-primary) 100%);
+  position: relative;
+}
+
+.contact-cta::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.contact-cta h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.contact-cta p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 36px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  position: relative;
+}
+
+.contact-emails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.contact-email-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-email-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  width: 100px;
+  text-align: right;
+}
+
+.contact-email-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-email-link:hover { color: var(--gold-light); }
+
+.contact-btn-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* ── FOOTER ───────────────────────────────── */
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-socials a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.footer-socials a:hover { color: var(--gold); }
+
+.footer-copy {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ── RESPONSIVE ───────────────────────────── */
+@media (max-width: 768px) {
+  section { padding: 60px 0; }
+
+  .hero { min-height: 80vh; }
+
+  .hero-photo { width: 160px; height: 160px; }
+
+  .hero-stats { gap: 28px; }
+
+  .hero-stat-value { font-size: 26px; }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .audience-bar-label { width: 72px; }
+
+  .track-row {
+    grid-template-columns: 32px 1fr;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+
+  .track-bpm, .track-plays { display: none; }
+
+  .partnership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-email-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .contact-email-label {
+    width: auto;
+    text-align: center;
+  }
+
+  .hero-cta-row, .contact-btn-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn { width: 100%; max-width: 280px; justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .hero-stats { gap: 20px; }
+  .residency-grid { grid-template-columns: 1fr; }
+  .content-style-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-photo">
+      <span class="hero-photo-placeholder">Artist Photo</span>
+    </div>
+    <div class="hero-label">Brand Ambassador &amp; Media Kit</div>
+    <h1>DJ OTEO</h1>
+    <div class="hero-subtitle">Afro House &middot; Tech House &middot; Afro Latin House</div>
+    <div class="hero-location">Miami, FL &nbsp;&bull;&nbsp; 118 &ndash; 128 BPM &nbsp;&bull;&nbsp; 4+ Nights/Week</div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-value">5+</div>
+        <div class="hero-stat-label">Active Residencies</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">4+</div>
+        <div class="hero-stat-label">Nights Per Week</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">200+</div>
+        <div class="hero-stat-label">Sets Per Year</div>
+      </div>
+    </div>
+    <div class="hero-cta-row">
+      <a href="mailto:oteobooking@gmail.com?subject=Brand%20Partnership%20Inquiry" class="btn btn-primary">Partner With OTEO</a>
+      <a href="#" class="btn btn-outline">Download Media Kit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ ABOUT ═══════ -->
+<section class="about">
+  <div class="container">
+    <div class="section-divider"></div>
+    <div class="section-label">About</div>
+    <div class="section-title">The Sound of Miami's Nightlife</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>DJ OTEO is a Miami-based DJ and active producer on Fish Out Of Water Records, delivering a signature blend of Afro House, Tech House, and Afro Latin House across South Florida's most prominent nightlife venues. With multiple residencies spanning upscale supper clubs, rooftop brunches, and high-energy nightclub events, OTEO brings a consistent, premium sonic identity to every room.</p>
+        <p>Performing 4+ nights per week across diverse venues and formats, OTEO commands audiences ranging from intimate 100-person brunches to 500+ capacity club nights. His Latin-rooted approach to Afro House creates a distinctive energy that resonates with Miami's multicultural nightlife scene, making him an ideal partner for brands targeting affluent, experience-driven consumers.</p>
+      </div>
+      <div class="about-details">
+        <div class="about-detail">
+          <div class="about-detail-label">Genre Focus</div>
+          <div class="about-detail-value">Afro House &middot; Tech House &middot; Afro Latin House</div>
+        </div>
+        <div class="about-detail">
+          <div class="about-detail-label">Core BPM Range</div>
+          <div class="about-detail-value">118 &ndash; 128 BPM</div>
+        </div>
+        <div class="about-detail">
+          <div class="about-detail-label">Label</div>
+          <div class="about-detail-value">Fish Out Of Water Records</div>
+        </div>
+        <div class="about-detail">
+          <div class="about-detail-label">Management</div>
+          <div class="about-detail-value">Sydney Booker Talent Solutions</div>
+        </div>
+        <div class="about-detail">
+          <div class="about-detail-label">Instagram</div>
+          <div class="about-detail-value"><a href="https://instagram.com/djoteo" target="_blank">@djoteo</a></div>
+        </div>
+        <div class="about-detail">
+          <div class="about-detail-label">SoundCloud</div>
+          <div class="about-detail-value"><a href="https://soundcloud.com/oteo-397563902" target="_blank">OTEO on SoundCloud</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SIGNATURE SOUND ═══════ -->
+<section>
+  <div class="container">
+    <div class="section-divider"></div>
+    <div class="section-label">Signature Sound</div>
+    <div class="section-title">Most Played Tracks</div>
+    <div class="signature-tracks">
+      <div class="track-row">
+        <div class="track-rank">1</div>
+        <div class="track-info">
+          <div class="track-title">Rosalie, James Mac, VALL &mdash; The Boy Is Mine</div>
+          <div class="track-label">71 sessions played</div>
+        </div>
+        <div class="track-bpm">123 BPM</div>
+        <div class="track-plays">71 Sets</div>
+      </div>
+      <div class="track-row">
+        <div class="track-rank">2</div>
+        <div class="track-info">
+          <div class="track-title">Sllash &amp; Doppe &mdash; Bamboleo</div>
+          <div class="track-label">61 sessions played</div>
+        </div>
+        <div class="track-bpm">124 BPM</div>
+        <div class="track-plays">61 Sets</div>
+      </div>
+      <div class="track-row">
+        <div class="track-rank">3</div>
+        <div class="track-info">
+          <div class="track-title">Tuurk &mdash; Don't Phunk</div>
+          <div class="track-label">59 sessions played</div>
+        </div>
+        <div class="track-bpm">121 BPM</div>
+        <div class="track-plays">59 Sets</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ RESIDENCIES ═══════ -->
+<section class="residencies">
+  <div class="container">
+    <div class="section-divider"></div>
+    <div class="section-label">Residencies</div>
+    <div class="section-title">Where OTEO Performs</div>
+    <div class="residency-grid">
+      <div class="residency-card">
+        <span class="residency-status active">Current</span>
+        <div class="residency-name">Helena Modern Riviera</div>
+        <div class="residency-detail">Brunch + Latin Night &bull; Upscale Mediterranean venue</div>
+      </div>
+      <div class="residency-card">
+        <span class="residency-status active">Current</span>
+        <div class="residency-name">Debonair Supperclub</div>
+        <div class="residency-detail">Premium supper club experience</div>
+      </div>
+      <div class="residency-card">
+        <span class="residency-status active">Current</span>
+        <div class="residency-name">Nectar Room at Wave</div>
+        <div class="residency-detail">Puro Rythm events &bull; Afro House focused</div>
+      </div>
+      <div class="residency-card">
+        <span class="residency-status active">Current</span>
+        <div class="residency-name">American Social Sand Lake</div>
+        <div class="residency-detail">Friday nights &bull; High-energy social venue</div>
+      </div>
+      <div class="residency-card">
+        <span class="residency-status active">Current</span>
+        <div class="residency-name">Great Southern Box Company</div>
+        <div class="residency-detail">Open format &bull; Diverse crowd programming</div>
+      </div>
+      <div class="residency-card">
+        <span class="residency-status past">Past</span>
+        <div class="residency-name">Ava Mediterranean</div>
+        <div class="residency-detail">Former residency</div>
+      </div>
+      <div class="residency-card">
+        <span class="residency-status past">Past</span>
+        <div class="residency-name">The H Orlando</div>
+        <div class="residency-detail">Former residency</div>
+      </div>
+      <div class="residency-card">
+        <span class="residency-status past">Past</span>
+        <div class="residency-name">Elixir Brunch &bull; Celine Treasure Room</div>
+        <div class="residency-detail">Former residencies</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTENT STYLE ═══════ -->
+<section>
+  <div class="container">
+    <div class="section-divider"></div>
+    <div class="section-label">Content Style</div>
+    <div class="section-title">What Brands Get</div>
+    <div class="content-style-grid">
+      <div class="content-card">
+        <span class="content-icon">&#9835;</span>
+        <h3>In-Booth Content</h3>
+        <p>Authentic behind-the-decks footage, crowd reactions, and live mixing clips shot in premium nightlife settings.</p>
+      </div>
+      <div class="content-card">
+        <span class="content-icon">&#9733;</span>
+        <h3>Lifestyle Integration</h3>
+        <p>Natural product placement woven into DJ lifestyle content — studio sessions, venue arrivals, backstage moments.</p>
+      </div>
+      <div class="content-card">
+        <span class="content-icon">&#9881;</span>
+        <h3>Event Coverage</h3>
+        <p>Professional photo and video from residency nights, featuring brand activations in real nightlife environments.</p>
+      </div>
+      <div class="content-card">
+        <span class="content-icon">&#9670;</span>
+        <h3>Audience Engagement</h3>
+        <p>Story takeovers, interactive polls, and community-driven content that drives authentic brand discovery.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ AUDIENCE ═══════ -->
+<section class="audience">
+  <div class="container">
+    <div class="section-divider"></div>
+    <div class="section-label">Audience</div>
+    <div class="section-title">Who OTEO Reaches</div>
+    <div class="audience-grid">
+      <div class="audience-block">
+        <h3>Age Range</h3>
+        <div class="audience-bar-group">
+          <div class="audience-bar">
+            <span class="audience-bar-label">21 &ndash; 27</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:35%"></div></div>
+            <span class="audience-bar-pct">35%</span>
+          </div>
+          <div class="audience-bar">
+            <span class="audience-bar-label">28 &ndash; 34</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:40%"></div></div>
+            <span class="audience-bar-pct">40%</span>
+          </div>
+          <div class="audience-bar">
+            <span class="audience-bar-label">35 &ndash; 44</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:18%"></div></div>
+            <span class="audience-bar-pct">18%</span>
+          </div>
+          <div class="audience-bar">
+            <span class="audience-bar-label">45+</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:7%"></div></div>
+            <span class="audience-bar-pct">7%</span>
+          </div>
+        </div>
+      </div>
+      <div class="audience-block">
+        <h3>Gender</h3>
+        <div class="audience-bar-group">
+          <div class="audience-bar">
+            <span class="audience-bar-label">Male</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:52%"></div></div>
+            <span class="audience-bar-pct">52%</span>
+          </div>
+          <div class="audience-bar">
+            <span class="audience-bar-label">Female</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:45%"></div></div>
+            <span class="audience-bar-pct">45%</span>
+          </div>
+          <div class="audience-bar">
+            <span class="audience-bar-label">Other</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:3%"></div></div>
+            <span class="audience-bar-pct">3%</span>
+          </div>
+        </div>
+      </div>
+      <div class="audience-block">
+        <h3>Top Markets</h3>
+        <div class="audience-bar-group">
+          <div class="audience-bar">
+            <span class="audience-bar-label">Miami</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:55%"></div></div>
+            <span class="audience-bar-pct">55%</span>
+          </div>
+          <div class="audience-bar">
+            <span class="audience-bar-label">Orlando</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:25%"></div></div>
+            <span class="audience-bar-pct">25%</span>
+          </div>
+          <div class="audience-bar">
+            <span class="audience-bar-label">S. Florida</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:12%"></div></div>
+            <span class="audience-bar-pct">12%</span>
+          </div>
+          <div class="audience-bar">
+            <span class="audience-bar-label">National</span>
+            <div class="audience-bar-track"><div class="audience-bar-fill" style="width:8%"></div></div>
+            <span class="audience-bar-pct">8%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PARTNERSHIPS ═══════ -->
+<section>
+  <div class="container">
+    <div class="section-divider"></div>
+    <div class="section-label">Partnerships</div>
+    <div class="section-title">Collaboration Tiers</div>
+    <div class="partnership-grid">
+      <div class="partnership-card">
+        <div class="partnership-type">Tier 1</div>
+        <div class="partnership-name">Social Post</div>
+        <div class="partnership-price">$500 &ndash; $1,500</div>
+        <ul class="partnership-includes">
+          <li>Single in-feed post or carousel</li>
+          <li>Story set (3&ndash;5 frames)</li>
+          <li>Brand tag and mention</li>
+          <li>Content usage rights (30 days)</li>
+        </ul>
+      </div>
+      <div class="partnership-card featured">
+        <div class="partnership-type">Tier 2</div>
+        <div class="partnership-name">UGC Package</div>
+        <div class="partnership-price">$1,500 &ndash; $3,500</div>
+        <ul class="partnership-includes">
+          <li>3&ndash;5 custom content pieces</li>
+          <li>In-booth and lifestyle footage</li>
+          <li>Story series + highlight save</li>
+          <li>Raw files delivered</li>
+          <li>Content usage rights (90 days)</li>
+        </ul>
+      </div>
+      <div class="partnership-card">
+        <div class="partnership-type">Tier 3</div>
+        <div class="partnership-name">Event Integration</div>
+        <div class="partnership-price">$2,500 &ndash; $5,000</div>
+        <ul class="partnership-includes">
+          <li>Brand presence at residency night</li>
+          <li>On-site activation support</li>
+          <li>Full event content coverage</li>
+          <li>Pre/post event social promotion</li>
+          <li>Venue coordination included</li>
+        </ul>
+      </div>
+      <div class="partnership-card">
+        <div class="partnership-type">Tier 4</div>
+        <div class="partnership-name">Full Campaign</div>
+        <div class="partnership-price">$5,000 &ndash; $15,000</div>
+        <ul class="partnership-includes">
+          <li>Multi-week content campaign</li>
+          <li>Multiple venue activations</li>
+          <li>Dedicated social takeover</li>
+          <li>Custom content calendar</li>
+          <li>Performance reporting</li>
+          <li>Exclusivity in category</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PORTFOLIO ═══════ -->
+<section class="portfolio">
+  <div class="container">
+    <div class="section-divider"></div>
+    <div class="section-label">Portfolio</div>
+    <div class="section-title">Past Work &amp; Brand Collaborations</div>
+    <div class="portfolio-grid">
+      <div class="portfolio-placeholder">
+        <span>Brand Collab 1</span>
+      </div>
+      <div class="portfolio-placeholder">
+        <span>Brand Collab 2</span>
+      </div>
+      <div class="portfolio-placeholder">
+        <span>Brand Collab 3</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTACT CTA ═══════ -->
+<section class="contact-cta">
+  <div class="container">
+    <div class="section-divider"></div>
+    <h2>Let's Build Something Together</h2>
+    <p>Interested in partnering with DJ OTEO? Reach out to discuss custom packages tailored to your brand's goals.</p>
+    <div class="contact-emails">
+      <div class="contact-email-row">
+        <span class="contact-email-label">Booking</span>
+        <a href="mailto:oteobooking@gmail.com" class="contact-email-link">oteobooking@gmail.com</a>
+      </div>
+      <div class="contact-email-row">
+        <span class="contact-email-label">Management</span>
+        <a href="mailto:contact.sydneydiana@gmail.com" class="contact-email-link">contact.sydneydiana@gmail.com</a>
+      </div>
+    </div>
+    <div class="contact-btn-row">
+      <a href="mailto:oteobooking@gmail.com?subject=Brand%20Partnership%20Inquiry%20%E2%80%93%20DJ%20OTEO" class="btn btn-primary">Start a Conversation</a>
+      <a href="#" class="btn btn-outline">Download Media Kit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-socials">
+      <a href="https://instagram.com/djoteo" target="_blank">Instagram</a>
+      <a href="https://soundcloud.com/oteo-397563902" target="_blank">SoundCloud</a>
+      <a href="https://djoteo.com" target="_blank">Website</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 DJ OTEO. All rights reserved. &nbsp;&bull;&nbsp; Sydney Booker Talent Solutions</div>
+  </div>
+</footer>
+
+</body>
+</html>
